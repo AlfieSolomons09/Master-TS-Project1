@@ -38,7 +38,7 @@ const TodoItem = ({
       editHandler(todo.id, textVal);
     }
 
-    setButtonText((prevText) => (editActive ? "Edit" : "Done"));
+    setButtonText(() => (editActive ? "Edit" : "Done"));
   }
 
   return (
